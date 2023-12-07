@@ -544,11 +544,11 @@ main .partner .partner__row .partner__row-item {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
-  background-image: url(../img/partner.svg);
+  height: 313px;
+  background-image: url(../img/partner.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 17px;
+  padding-top: 10px;
   margin-bottom: 50px;
   border-radius: 150px;
 }
@@ -563,8 +563,8 @@ main .partner .partner__row .partner__row-item .img {
   background-color: rgba(14, 14, 14, 0.3215686275);
   border-radius: 50%;
   position: absolute;
-  bottom: -53px;
-  left: calc(50% - 52px);
+  bottom: -43px;
+  left: calc(50% - 49px);
   width: 100px;
   height: 100px;
   display: flex;
