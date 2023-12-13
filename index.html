@@ -399,20 +399,20 @@
           <div class="footer__items-separater"></div>
           <div class="footer__items-item">
             <ul class="footer__list">
-              <li>ABOUT</li>
-              <li>SERVICES</li>
-              <li>TECHNOLOGIES</li>
-              <li>HOW TO</li>
-              <li>JOIN HYDRA</li>
+              <li><a>ABOUT</a></li>
+              <li><a>SERVICES</a></li>
+              <li><a>TECHNOLOGIES</a></li>
+              <li><a>HOW TO</a></li>
+              <li><a>JOIN HYDRA</a></li>
             </ul>
           </div>
           <div class="footer__items-separater"></div>
           <div class="footer__items-item">
             <ul class="footer__list">
-              <li>F.A.Q</li>
-              <li>SITEMAP</li>
-              <li>CONDITIONS</li>
-              <li>LICENSES</li>
+              <li><a>F.A.Q</a></li>
+              <li><a>SITEMAP</a></li>
+              <li><a>CONDITIONS</a></li>
+              <li><a>LICENSES</a></li>
             </ul>
           </div>
           <div class="footer__items-separater"></div>
@@ -421,22 +421,22 @@
               <p>SOCIALIZE WITH HYDRA</p>
               <div class="footer__social-row">
                 <div>
-                  <img src="img/facebook.svg" alt="facebook">
+                  <a><img src="img/facebook.svg" alt="facebook"></a>
                 </div>
                 <div>
-                  <img src="img/twitter.svg" alt="twitter">
+                  <a><img src="img/twitter.svg" alt="twitter"></a>
                 </div>
                 <div>
-                  <img src="img/linkedin.svg" alt="linkedin">
+                  <a><img src="img/linkedin.svg" alt="linkedin"></a>
                 </div>
                 <div>
-                  <img src="img/youtube.svg" alt="youtube">
+                  <a><img src="img/youtube.svg" alt="youtube"></a>
                 </div>
                 <div>
-                  <img src="img/instagram.svg" alt="instagram">
+                  <a><img src="img/instagram.svg" alt="instagram"></a>
                 </div>
                 <div>
-                  <img src="img/pinterest.svg" alt="pinterest">
+                  <a><img src="img/pinterest.svg" alt="pinterest"></a>
                 </div>
               </div>
               <button class="btn btnTransparent">BUILD YOUR WORLD</button>
@@ -456,32 +456,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const goToAbout = function (e) {
-        document.getElementById("about").scrollIntoView();
-      };
-      const goToServices = function (e) {
-        document.getElementById("services").scrollIntoView();
-      };
-      const goToTech = function (e) {
-        document.getElementById("technology").scrollIntoView();
-      };
-      const goToHow = function (e) {
-        document.getElementById("how").scrollIntoView();
-      };
-      const goToContact = function (e) {
-        document.getElementById("contact").scrollIntoView();
-      };
-      const goToJoin = function (e) {
-        document.getElementById("join").scrollIntoView();
-      };
-      document.querySelector(".navToggle").addEventListener(
-        "click",
-        function (e) {
-          document.querySelector(".navToggle").classList.toggle("open");
-      },
-      false
-    );
-    </script>
+    <img id="scrollTop" class="arrow" onclick="topFunction()" src="img/shape3.png" alt="arrow">
+    <script src="js/index.js"></script>
   </body>
 </html>

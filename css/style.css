@@ -8,6 +8,34 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
+}
+body > .arrow {
+  display: none;
+  cursor: pointer;
+  background-color: rgba(14, 14, 14, 0.3215686275);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+body > .arrow > div {
+  background: linear-gradient(90deg, rgb(130, 120, 176) 0%, rgb(189, 180, 227) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+body > .arrow > div img {
+  width: 18px;
 }
 
 @font-face {
@@ -909,6 +937,9 @@ footer .container .footer .footer__list li {
   margin-bottom: 24px;
   font-weight: 600;
 }
+footer .container .footer .footer__list li a {
+  cursor: pointer;
+}
 footer .container .footer .footer__social {
   display: flex;
   flex-direction: column;
@@ -926,6 +957,9 @@ footer .container .footer .footer__social-row {
   display: flex;
   gap: 20px;
   margin-bottom: 16px;
+}
+footer .container .footer .footer__social-row a {
+  cursor: pointer;
 }
 footer .container .footer .footer__social .btn {
   color: black;
