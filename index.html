@@ -475,6 +475,13 @@
       const goToJoin = function (e) {
         document.getElementById("join").scrollIntoView();
       };
+      document.querySelector(".navToggle").addEventListener(
+        "click",
+        function (e) {
+          document.querySelector(".navToggle").classList.toggle("open");
+      },
+      false
+    );
     </script>
   </body>
 </html>

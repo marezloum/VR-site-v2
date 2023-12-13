@@ -107,6 +107,9 @@ body {
 .btn.btnTransparent.btnBlack {
   color: rgb(52, 48, 69);
 }
+.btn:hover {
+  background: linear-gradient(90deg, #4a416f 0%, #f5f3ff 100%);
+}
 
 .text-details {
   font-weight: 200;
@@ -216,6 +219,25 @@ body {
   display: block;
   height: 4px;
   margin-bottom: 7px;
+}
+.header .navToggle.open span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  transition: all 0.5s ease;
+}
+.header .navToggle.open span:nth-child(2) {
+  display: none;
+}
+.header .navToggle.open span:first-child {
+  transform: rotate(-45deg);
+  top: 18px;
+}
+.header .navToggle.open span:last-child {
+  transform: rotate(45deg);
+  top: 18px;
 }
 .header .navToggle :nth-child(2) {
   padding-left: 7px;
@@ -948,6 +970,7 @@ footer .container .footer .copyright p {
 @media (max-width: 1200px) {
   .navToggle {
     display: flex !important;
+    position: relative;
     padding-top: 12px;
   }
   .header .nav,

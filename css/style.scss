@@ -106,6 +106,9 @@ body {
       color: rgba(52, 48, 69, 1);
     }
   }
+  &:hover{
+    background:linear-gradient(90deg, #4a416f 0%, #f5f3ff 100%);
+  }
 }
 .text-details {
   font-weight: 200;
@@ -225,6 +228,28 @@ body {
       height: 4px;
       margin-bottom: 7px;
     }
+    
+  &.open {
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      transition: all 0.5s ease;
+      &:nth-child(2) {
+        display: none;
+      }
+      &:first-child{
+        transform: rotate(-45deg);
+        top: 18px;
+      }
+      &:last-child{
+        transform: rotate(45deg);
+        top: 18px;
+      }
+    }
+  }
     :nth-child(2) {
       padding-left: 7px;
     }
@@ -452,8 +477,6 @@ main {
 
           .text-subtitle-wrapper {
             gap: 15px;
-          }
-          .text-title {
           }
         }
         .text-details {
@@ -1020,6 +1043,7 @@ footer {
   // }
   .navToggle {
     display: flex !important;
+    position: relative;
     padding-top: 12px;
   }
   .header {
