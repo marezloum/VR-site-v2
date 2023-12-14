@@ -10,6 +10,15 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+body .notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .notFound h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
 body > .arrow {
   display: none;
   cursor: pointer;
@@ -296,7 +305,7 @@ main .hero__text {
 }
 main .hero__text .text-details {
   margin-bottom: 40px;
-  padding-left: 0 !important;
+  padding-left: 0;
 }
 main .hero__text-title {
   font-family: Montserrat;
@@ -423,7 +432,7 @@ main .hero__contact-item:nth-child(3) > img {
   margin-right: 25px;
 }
 main .hero__contact-item:nth-child(3) span {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 main .hero__contact-item > h3 {
   font-family: Montserrat;
@@ -439,7 +448,7 @@ main .hero__contact-item-row {
 }
 main .hero__contact-item-row > h3 {
   margin-bottom: 10.9px;
-  font-size: 23.5px !important;
+  font-size: 23.5px;
 }
 main .hero__contact-item-row > span {
   font-size: 13.9px;
@@ -887,32 +896,32 @@ footer .container .footer > img:nth-child(2) {
   left: 0px;
   top: -313px;
 }
-footer .container .footer .footer__items {
+footer .container .footer__items {
   width: 100%;
   display: flex;
   padding-top: 7px;
   margin-bottom: 51px;
 }
-footer .container .footer .footer__items-item {
+footer .container .footer__items-item {
   width: 25%;
   padding-top: 2px;
 }
-footer .container .footer .footer__items-item:first-child {
+footer .container .footer__items-item:first-child {
   width: 22.1698113208%;
 }
-footer .container .footer .footer__items-item:nth-child(3) {
+footer .container .footer__items-item:nth-child(3) {
   width: 24.6855345912%;
   padding-left: 6.2893081761%;
 }
-footer .container .footer .footer__items-item:nth-child(5) {
+footer .container .footer__items-item:nth-child(5) {
   width: 22.0125786164%;
   padding-left: 8.2547169811%;
 }
-footer .container .footer .footer__items-item:nth-child(7) {
+footer .container .footer__items-item:nth-child(7) {
   width: 29.7169811321%;
   padding-left: 5.1886792453%;
 }
-footer .container .footer .footer__items-separater {
+footer .container .footer__items-separater {
   width: 6px;
   height: 200px;
   background: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #c0b7e8 35.21%, #8176af 68.91%, #343045 99.5%);
@@ -939,6 +948,7 @@ footer .container .footer .footer__list li {
 }
 footer .container .footer .footer__list li a {
   cursor: pointer;
+  text-decoration: none;
 }
 footer .container .footer .footer__social {
   display: flex;
@@ -981,29 +991,29 @@ footer .container .footer .copyright p {
 }
 
 @media (max-width: 1439px) {
-  .step .step__steps {
+  main .step .step__steps {
     position: relative;
     padding: 0px 8px 0 0;
     justify-content: space-between;
     margin-bottom: 14px;
   }
-  .step .step__steps .step__row:first-child {
-    margin-right: 0 !important;
+  main .step .step__steps .step__row:first-child {
+    margin-right: 0;
   }
-  .step .step__steps .step__row:nth-child(2) {
-    margin-right: 0 !important;
+  main .step .step__steps .step__row:nth-child(2) {
+    margin-right: 0;
   }
-  .step .step__steps .step__row:nth-child(3) {
-    margin-right: 0 !important;
+  main .step .step__steps .step__row:nth-child(3) {
+    margin-right: 0;
   }
-  .step .step__subtext {
+  main .step .step__subtext {
     position: relative;
     justify-content: space-between;
   }
 }
 @media (max-width: 1200px) {
-  .navToggle {
-    display: flex !important;
+  .header .navToggle {
+    display: flex;
     position: relative;
     padding-top: 12px;
   }
@@ -1143,9 +1153,9 @@ footer .container .footer .copyright p {
     margin-bottom: 0px;
   }
   main .intro__row .text-wrapper {
-    flex-basis: 100% !important;
+    flex-basis: 100%;
     text-align: center;
-    padding-left: 0 !important;
+    padding-left: 0;
   }
   main .intro__row .text-wrapper .text-title {
     font-size: 26px;
@@ -1174,18 +1184,18 @@ footer .container .footer .copyright p {
   main .intro__row:nth-child(2) .text-wrapper {
     text-align: left;
   }
+  main .intro__row:nth-child(2) .text-wrapper .text-details {
+    font-size: 12.3px;
+    line-height: 21px;
+    padding-right: 0;
+    margin-bottom: 41px;
+  }
   main .intro__row:nth-child(2) .text-wrapper .btn {
     margin: 0 auto;
     width: 275px;
     height: 56px;
     font-size: 14px;
     padding-left: 7px;
-  }
-  main .intro__row:nth-child(2) .text-details {
-    font-size: 12.3px;
-    line-height: 21px;
-    padding-right: 0 !important;
-    margin-bottom: 41px !important;
   }
   main .intro__row:nth-child(2) .intro__row-image {
     flex-basis: 100%;
@@ -1270,11 +1280,11 @@ footer .container .footer .copyright p {
     padding-right: 13px;
   }
   main .partner .partner__row .partner__row-item {
-    height: 170px !important;
+    height: 170px;
     padding-left: 22px;
     gap: 4px;
-    justify-content: unset !important;
-    padding-top: 45px !important;
+    justify-content: unset;
+    padding-top: 45px;
     background-position: bottom;
     border-radius: 60px;
     margin-bottom: 113px;
@@ -1489,76 +1499,76 @@ footer .container .footer .copyright p {
     padding-top: 51px;
     padding-right: 4px;
   }
-  footer .footer {
+  footer .container .footer {
     width: 100%;
     position: relative;
   }
-  footer .footer > img:first-child {
+  footer .container .footer > img:first-child {
     width: 100%;
-    top: 80px !important;
-    left: 0 !important;
+    top: 80px;
+    left: 0;
     height: 143px;
   }
-  footer .footer > img:nth-child(2) {
+  footer .container .footer > img:nth-child(2) {
     width: 100%;
-    top: -74px !important;
-    left: 0px !important;
+    top: -74px;
+    left: 0px;
     height: 197px;
   }
-  footer .footer__items {
+  footer .container .footer__items {
     flex-direction: column;
-    margin-bottom: 59px !important;
+    margin-bottom: 59px;
   }
-  footer .footer__items-item {
+  footer .container .footer__items-item {
     display: none;
   }
-  footer .footer__items-item:first-child {
+  footer .container .footer__items-item:first-child {
     display: block;
-    width: 100% !important;
+    width: 100%;
   }
-  footer .footer__items-item:first-child .logo {
+  footer .container .footer__items-item:first-child .logo {
     padding-right: 3px;
     margin: 0 auto;
   }
-  footer .footer__items-item:nth-child(7) {
+  footer .container .footer__items-item:nth-child(7) {
     display: block;
-    width: 100% !important;
-    padding-top: 60px !important;
+    width: 100%;
+    padding-top: 60px;
     text-align: center;
     padding-right: 36px;
   }
-  footer .footer__items-item:nth-child(7) .footer__social {
+  footer .container .footer__items-item:nth-child(7) .footer__social {
     align-items: center;
     gap: 20px;
   }
-  footer .footer__items-item:nth-child(7) .footer__social-row {
+  footer .container .footer__items-item:nth-child(7) .footer__social-row {
     padding-left: 11px;
     margin-bottom: 23px;
   }
-  footer .footer__items-item:nth-child(7) .footer__social .btn {
+  footer .container .footer__items-item:nth-child(7) .footer__social .btn {
     margin-left: 9px;
     width: 293px;
     height: 56px;
     font-size: 14px;
     padding-left: 2px;
   }
-  footer .footer__items-separater {
+  footer .container .footer__items-separater {
     display: none;
   }
-  footer .footer .copyright p {
-    padding-top: 37px !important;
+  footer .container .footer .copyright p {
+    padding-top: 37px;
     display: flex;
     flex-direction: column;
     gap: 21px;
   }
-  footer .footer .copyright p span:nth-child(even) {
+  footer .container .footer .copyright p span:nth-child(even) {
     display: none;
   }
-  footer .footer .copyright p span:first-child {
+  footer .container .footer .copyright p span:first-child {
     padding-right: 8px;
     font-size: 14.8px;
   }
-  footer .footer .copyright p span:last-child {
+  footer .container .footer .copyright p span:last-child {
     padding-right: 4px;
     font-size: 14.8px;
   }
@@ -1600,20 +1610,20 @@ footer .container .footer .copyright p {
     padding-top: 51px;
     padding-right: 4px;
   }
-  footer .footer {
+  footer .container .footer {
     width: 100%;
     position: relative;
   }
-  footer .footer > img:first-child {
+  footer .container .footer > img:first-child {
     width: 518px;
-    top: 80px !important;
-    left: -85px !important;
+    top: 80px;
+    left: -85px;
     height: 143px;
   }
-  footer .footer > img:nth-child(2) {
+  footer .container .footer > img:nth-child(2) {
     width: 517px;
-    top: -74px !important;
-    left: -83px !important;
+    top: -74px;
+    left: -83px;
     height: 197px;
   }
 }
