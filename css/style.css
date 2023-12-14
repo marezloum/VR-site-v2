@@ -1606,6 +1606,12 @@ footer .container .footer .copyright p {
   .header .logo .logo__text img {
     width: 100%;
   }
+  main .partner {
+    margin-bottom: 72px;
+  }
+  main .partner .partner__row .partner__row-item {
+    margin-bottom: 81px;
+  }
   footer {
     padding-top: 51px;
     padding-right: 4px;

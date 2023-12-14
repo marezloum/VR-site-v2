@@ -12,10 +12,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   h1 {
-         font-size: 40px;
-         font-weight: 500;
-    }}
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
   > .arrow {
     display: none;
     cursor: pointer;
@@ -1734,6 +1735,16 @@ footer {
         padding-top: 10px;
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+  main {
+    .partner {
+      margin-bottom: 72px;
+      .partner__row {
+        .partner__row-item {
+          margin-bottom: 81px;
         }
       }
     }
